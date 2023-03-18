@@ -1,0 +1,39 @@
+#galeria {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+    scroll-margin-top: 200px;
+}
+
+#thumbnail-slider {
+    width: 100%;
+}
+
+/* #galeria {
+    width: 80%;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+} */
+
+#galeria h2 {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 600px) {
+    #thumbnail-slider {
+        width: 50%;
+    }
+}
+
+
+
+

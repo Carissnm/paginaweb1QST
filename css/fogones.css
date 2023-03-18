@@ -1,0 +1,40 @@
+#fogones-pasados {
+    width: 100%;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+    align-items: center;
+    scroll-margin-top: 200px;
+
+}
+
+#fogones-pasados h2 {
+    margin-top: 1rem;
+}
+
+.youtube {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 320px;
+
+}
+
+.youtube iframe {
+    width: 100%;
+}
+
+.fogones-texto button {
+    margin-top: 2rem;
+}
+
+@media screen and (min-width: 600px) {
+    .youtube {
+        width: 60%;
+        height: 400px;
+    }
+}
+

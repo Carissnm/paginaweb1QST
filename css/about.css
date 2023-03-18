@@ -1,0 +1,33 @@
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sobre-nosotros {
+    width: 75%;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+    align-items: center;
+}
+
+.sobre-nosotros p {
+    margin-top: 1rem;
+}
+
+.sobre-nosotros h2 {
+    margin-top: 2rem;
+}
+
+.sobre-nosotros h3 {
+    margin-top: 1rem;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bolder;
+}
+
+#nosotros {
+    scroll-margin-top: 20px;
+}
