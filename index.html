@@ -99,7 +99,7 @@
             <div class="line"></div>
             <h2>QUIÉNES SOMOS</h2>
             <div class="nosotros-box">
-                <img src="./multimedia/fotopersonaprueba1.jpg" alt="foto de mandanga dance">
+                <img src="./multimedia/1qst-croma033.png" alt="foto de mandanga dance">
                 <div class="nosotros-texto">
                     <h3>MANDANGA DANCE</h3>
                 <p class="nosotros-parrafo derecha">
@@ -107,7 +107,7 @@
                 </div>
             </div>
             <div class="nosotros-box derecha">
-                <img src="./multimedia/fotopersonaprueba2.jpg" alt="foto de mandanga dance">
+                <img src="./multimedia/1qst-croma052.png" alt="foto de mandanga dance">
                 <div class="nosotros-texto">
                     <h3>SARASA SASA</h3>
                 <p class="nosotros-parrafo">
@@ -115,7 +115,7 @@
                 </div>
             </div>
             <div class="nosotros-box izquierda">
-                <img src="./multimedia/fotopersonaprueba3.jpg" alt="foto de mandanga dance">
+                <img src="./multimedia/1qst-croma059.png" alt="foto de mandanga dance">
                 <div class="nosotros-texto">
                     <h3>AGUSTINA PETTINAROLI</h3>
                 <p class="nosotros-parrafo">
@@ -168,24 +168,7 @@
         <section id="galeria">
             <div class="line"></div>
             <h2>GALERÍA</h2>
-            <!-- <div class="wrapper">
-                <i class="fa-solid fa-angle-left left"></i>
-                <div class="carousel">
-                    <img src="./multimedia/img-1.jpg" alt="">
-                    <img src="./multimedia/img-2.jpg" alt="">
-                    <img src="./multimedia/img-3.jpg" alt="">
-                    <img src="./multimedia/img-4.jpg" alt="">
-                    <img src="./multimedia/img-5.jpg" alt="">
-                    <img src="./multimedia/img-6.jpg" alt="">
-                    <img src="./multimedia/img-7.jpg" alt="">
-                    <img src="./multimedia/img-8.jpg" alt="">
-                    <img src="./multimedia/img-9.jpg" alt="">
-                    
-                </div>
-                <i class="fa-solid fa-angle-right right"></i>
-            </div> -->
-            <!-- carousel slider -->
-<div id="thumbnail-slider" class="mb-12 lg:mb-6 nav-inset-button carousel -mx-2" data-flickity='{ "cellAlign": "left", "wrapAround": true, "draggable": false, "adaptiveHeight": true, "prevNextButtons": true , "imagesLoaded": true }'>
+            <div id="thumbnail-slider" class="mb-12 lg:mb-6 nav-inset-button carousel -mx-2" data-flickity='{ "cellAlign": "left", "wrapAround": true, "draggable": false, "adaptiveHeight": true, "prevNextButtons": true , "imagesLoaded": true }'>
     <div class="max-w-full w-full px-2">
       <img alt="title" class="w-full h-auto max-w-auto" src="./multimedia/fotopersonaprueba1.jpg">
     </div>
@@ -195,24 +178,27 @@
     <div class="max-w-full w-full px-2">
       <img alt="title" class="w-full h-auto max-w-auto" src="./multimedia/fotopersonaprueba3.jpg">
     </div>
+    <div class="max-w-full w-full px-2">
+        <img alt="title" class="w-full h-auto max-w-auto" src="./multimedia/fuego2.jpg">
+      </div>
   </div>
         </section>
         <section id="contact" class="contacto">
             <div class="line"></div>
             <h2>CONTACTANOS</h2>
-                <form action="" class="formulario">
+                <form action="sent-email.php" method="POST" class="formulario">
                     <div class="nombre-apellido-form">
                         <input 
-                            class="input-nombre" type="text" placeholder="Nombre" required data-tipo="nombre">
+                            class="input-nombre" name="name" type="text" placeholder="Nombre" required data-tipo="nombre">
                             <span class="input-message-error"></span>
                     </div>
                     <div class="apellido-form">
-                            <input class="input-apellido" type="text" placeholder="Apellido" required data-tipo="apellido">
+                            <input class="input-apellido" name="surname" type="text" placeholder="Apellido" required data-tipo="apellido">
                             <span class="input-message-error"></span>
                         </div>
                     </div>
                     <div class="email-form">
-                        <input type="email" placeholder="Correo" required data-tipo="email">
+                        <input type="email" name="email" placeholder="Correo" required data-tipo="email">
                         <span class="input-message-error"></span>
                     </div>
                     <textarea name="mensaje" id="mensaje" cols="25" rows="5" placeholder="Colocá acá tu mensaje"></textarea>
@@ -229,7 +215,7 @@
     </main>
     <footer>
         <div class="copyright">
-            <p>&#169 1QST 2023</p>
+            <p>&#169 <span id="year"></span>1QST Todos los derechos reservados</p>
         </div>
     </footer>
     <script src="./flickity.pkgd.min.js" ></script>

@@ -3,7 +3,10 @@ const closeBar = document.querySelector('.close');
 const slideBar = document.querySelector('.lista-navbar');
 const openBar = document.querySelector('.dropdown-lista');
 const inputs = document.querySelectorAll('input');
+const d = document;
+const anio = document.getElementById('year');
 
+d.addEventListener('DOMContentLoaded', getYear());
 closeBar.onclick = closeSlideBar;
 openBar.onclick = openSlideBar;
 
@@ -24,5 +27,11 @@ inputs.forEach( input => {
     input.addEventListener('blur', (input) => {
         validate(input.target);
     })
-})
+});
+
+function getYear() {
+    const date = new Date();
+    const year = date.getFullYear();
+    anio.innerHTML = ` ${year} `;  
+}
 
