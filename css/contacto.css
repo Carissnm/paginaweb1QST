@@ -127,6 +127,11 @@ textarea {
     background-color: rgb(255, 187, 0);
 }
 
+.alerta {
+    color: rgb(255, 94, 0);
+    font-size: 1.3rem;
+}
+
 @media screen and (max-width: 459px) {
     .nombre-apellido-form input,
 .apellido-form input,

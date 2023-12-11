@@ -53,7 +53,19 @@ d.addEventListener('submit', e => {
     let templateID = "template_h7vxtag";
 
     emailjs.send(serviceID, templateID, params).then(res => {
-        alert("Su mensaje fue enviado con éxito");
+        d.querySelector('.formulario').reset();
+        imprimirAlerta('Tu mensaje fue enviado con éxito!')
     }).catch();
-})
+});
+
+function imprimirAlerta(mensaje,tipo) {
+    const alertaDiv = document.createElement('div');
+    alertaDiv.classList.add('alerta');
+
+    alertaDiv.textContent = mensaje;
+
+    document.querySelector('.formulario').insertBefore(alertaDiv,document.querySelector('#boton'));
+
+    setTimeout(() => alertaDiv.remove(), 2800);
+}
 
