@@ -71,19 +71,19 @@ i {
 
 @media screen and (max-width: 600px) {
     main {
-        height: 2000vh;
+        height: 1000vh;
     }
 }
 
 @media screen and (max-width: 800px) {
     main {
-        height: 730vh;
+        height: 800vh;
     }
 }
 
 @media screen and (min-width: 801px) and (max-width: 1000px) {
     main {
-        height: 400vh;
+        height: 500vh;
     }
 }
 
