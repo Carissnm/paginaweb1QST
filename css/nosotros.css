@@ -28,17 +28,31 @@
     margin-top: 1rem;
 }
 
+#img-pequena {
+    width: 50%;
+}
+
 .nosotros-box img {
     width: 100%;
 }
+
+
 
 @media screen and (min-width: 769px) {
     .nosotros-box {
         flex-direction: row;
     }
 
+    .nosotros-box .derecha {
+        
+    }
+
     .nosotros-box img {
-        padding: 3rem;
+        
+        width: 80%;
+    }
+
+    #img-pequena {
         width: 50%;
     }
 

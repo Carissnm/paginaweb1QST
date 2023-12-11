@@ -23,7 +23,7 @@ body {
 
 main {
     background-image: url(../multimedia/01.jpg);
-    height: 700vh;
+    height: 830vh;
     background-position: center;
     background-repeat: repeat;
     background-size: cover;
@@ -71,8 +71,27 @@ i {
 
 @media screen and (max-width: 600px) {
     main {
-        height: 793vh;
+        height: 2000vh;
     }
 }
+
+@media screen and (max-width: 800px) {
+    main {
+        height: 730vh;
+    }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1000px) {
+    main {
+        height: 400vh;
+    }
+}
+
+@media screen and (min-width: 1001px) {
+    main {
+        height: 700vh;
+    }
+}
+
 
 

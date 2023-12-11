@@ -35,3 +35,25 @@ function getYear() {
     anio.innerHTML = ` ${year} `;  
 }
 
+d.addEventListener('submit', e => {
+    e.preventDefault();
+    (function(){
+        emailjs.init("4WV3hRQjtgKVVHUgN");
+    })();
+
+    let params = {
+        sendername: document.querySelector("#senderName").value,
+        subject: "Nuevo Mensaje",
+        replyto: document.querySelector("#replyTo").value,
+        message: document.querySelector("#message").value
+
+    };
+
+    let serviceID = "1qst";
+    let templateID = "template_h7vxtag";
+
+    emailjs.send(serviceID, templateID, params).then(res => {
+        alert("Su mensaje fue enviado con éxito");
+    }).catch();
+})
+

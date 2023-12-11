@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="./css/contacto.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     
     <title>1QST</title>
 </head>
@@ -100,7 +101,7 @@
             <div class="line"></div>
             <h2>QUIÉNES SOMOS</h2>
             <div class="nosotros-box">
-                <img src="./multimedia/1qst-croma033.png" alt="foto de mandanga dance">
+                <img id="img-pequena" src="./multimedia/1qst-croma033.png" alt="foto de mandanga dance">
                 <div class="nosotros-texto">
                     <h3>MANDANGA DANCE</h3>
                 <p class="nosotros-parrafo derecha">
@@ -110,13 +111,13 @@
             <div class="nosotros-box derecha">
                 <img src="./multimedia/1qst-croma052.png" alt="foto de mandanga dance">
                 <div class="nosotros-texto">
-                    <h3>SARASA SASA</h3>
+                    <h3>JUAN MARTÍN PERELLO</h3>
                 <p class="nosotros-parrafo">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?</p>
                 </div>
             </div>
             <div class="nosotros-box izquierda">
-                <img src="./multimedia/1qst-croma059.png" alt="foto de mandanga dance">
+                <img id="img-pequena"  src="./multimedia/1qst-croma059.png" alt="foto de mandanga dance">
                 <div class="nosotros-texto">
                     <h3>AGUSTINA PETTINAROLI</h3>
                 <p class="nosotros-parrafo">
@@ -124,13 +125,14 @@
                 </div>
             </div>
             <div class="nosotros-box derecha">
-                <img src="./multimedia/fotopruebaperro.jpg" alt="foto de mandanga dance">
+                <img src="./multimedia/1qst-croma048.png" alt="foto de mandanga dance">
                 <div class="nosotros-texto">
-                    <h3>PIOLA</h3>
+                    <h3>CAIO FRANCO</h3>
                 <p class="nosotros-parrafo">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?</p>
                 </div>
             </div>
+            
         </section>
         <section id="ficha-virtual">
             <div class="line"></div>
@@ -143,15 +145,12 @@
                 </button> 
         </section>
         <section id="cafecito">
-                 <div class="line"></div>
-                 <h2>MANTENÉ VIVA LA LLAMA</h2>  
-                 <p class="ficha-parrafo">
-                    Si te gusta este proyecto y te copa ser parte de los FOGONES de 1QST podés colaborar con nosotros apretando el siguiente botón.
-                </p>
-                
-                 <button class="boton"><a target="_blank"   href="https://cafecito.app/1qst">Colaborá con un cafecito</a> </button>
-         
-
+            <div class="line"></div>
+            <h2>MANTENÉ VIVA LA LLAMA</h2>  
+            <p class="ficha-parrafo">
+                Si te gusta este proyecto y te copa ser parte de los FOGONES de 1QST podés colaborar con nosotros apretando el siguiente botón.
+            </p>
+            <button class="boton"><a target="_blank"   href="https://cafecito.app/1qst">Colaborá con un cafecito</a> </button>
         </section>
         <section id="fogones-pasados">
             <div class="line"></div>
@@ -170,44 +169,39 @@
             <div class="line"></div>
             <h2>GALERÍA</h2>
             <div id="thumbnail-slider" class="mb-12 lg:mb-6 nav-inset-button carousel -mx-2" data-flickity='{ "cellAlign": "left", "wrapAround": true, "draggable": false, "adaptiveHeight": true, "prevNextButtons": true , "imagesLoaded": true }'>
-    <div class="max-w-full w-full px-2">
-      <img alt="title" class="w-full h-auto max-w-auto" src="./multimedia/fotopersonaprueba1.jpg">
-    </div>
-    <div class="max-w-full w-full px-2">
-      <img alt="title" class="w-full h-auto max-w-auto" src="./multimedia/fotopersonaprueba2.jpg">
-    </div>
-    <div class="max-w-full w-full px-2">
-      <img alt="title" class="w-full h-auto max-w-auto" src="./multimedia/fotopersonaprueba3.jpg">
-    </div>
-    <div class="max-w-full w-full px-2">
-        <img alt="title" class="w-full h-auto max-w-auto" src="./multimedia/fuego2.jpg">
-      </div>
-  </div>
+                <div class="max-w-full w-full px-2">
+                    <img alt="title" class="w-full h-auto max-w-auto" src="./multimedia/fotopersonaprueba1.jpg">
+                </div>
+                <div class="max-w-full w-full px-2">
+                    <img alt="title" class="w-full h-auto max-w-auto" src="./multimedia/fotopersonaprueba2.jpg">
+                </div>
+                <div class="max-w-full w-full px-2">
+                    <img alt="title" class="w-full h-auto max-w-auto" src="./multimedia/fotopersonaprueba3.jpg">
+                </div>
+                <div class="max-w-full w-full px-2">
+                    <img alt="title" class="w-full h-auto max-w-auto" src="./multimedia/fuego2.jpg">
+                </div>
+            </div>
         </section>
         <section id="contact" class="contacto">
             <div class="line"></div>
             <h2>CONTACTANOS</h2>
-                <form action="sent-email.php" method="POST" class="formulario">
-                    <div class="nombre-apellido-form">
-                        <input 
-                            class="input-nombre" name="name" type="text" placeholder="Nombre" required data-tipo="nombre">
-                            <span class="input-message-error"></span>
-                    </div>
-                    <div class="apellido-form">
-                            <input class="input-apellido" name="surname" type="text" placeholder="Apellido" required data-tipo="apellido">
-                            <span class="input-message-error"></span>
-                        </div>
-                    </div>
-                    <div class="email-form">
-                        <input type="email" name="email" placeholder="Correo" required data-tipo="email">
+            <form class="formulario">
+                <div class="nombre-apellido-form">
+                    <input 
+                        class="input-nombre" id="senderName" name="name" type="text" placeholder="Nombre" required data-tipo="nombre">
                         <span class="input-message-error"></span>
-                    </div>
-                    <textarea name="mensaje" id="mensaje" cols="25" rows="5" placeholder="Colocá acá tu mensaje"></textarea>
-                    <div class="botones-form">
-                        <button type="reset" class="btn-reset">Borrar</button>
-                        <button class="btn-submit" type="submit">Enviar</button>
-                    </div>
-                </form>
+                </div>
+                <div class="email-form">
+                    <input type="email" id="replyTo" name="email" placeholder="Correo" required data-tipo="email">
+                    <span class="input-message-error"></span>
+                </div>
+                <textarea name="mensaje" id="message" cols="25" rows="5" placeholder="Colocá acá tu mensaje"></textarea>
+                <div class="botones-form">
+                    <button type="reset" class="btn-reset">Borrar</button>
+                    <button class="btn-submit" id="enviar" type="submit">Enviar</button>
+                </div>
+            </form>
         </section>
         <div class="todo-para-arriba">
             <p class="todo-arriba"> <a href="#">DE ACÁ, TODO PARA ARRIBA</a>
