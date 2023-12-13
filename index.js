@@ -55,7 +55,9 @@ d.addEventListener('submit', e => {
     emailjs.send(serviceID, templateID, params).then(res => {
         d.querySelector('.formulario').reset();
         imprimirAlerta('Tu mensaje fue enviado con éxito!')
-    }).catch();
+    }).catch(() => {
+        imprimirAlerta('Lo sentimos, hubo un error. Volvé a intentarlo más tarde.', 'error');
+    });
 });
 
 function imprimirAlerta(mensaje,tipo) {
